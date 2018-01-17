@@ -2,9 +2,17 @@
 	<head>
 		<script>
 			function submit() {
-				localStorage.setItem("minSeason", document.getElementById("min").value);
-				localStorage.setItem("maxSeason", document.getElementById("max").value);
-				alert(localStorage.getItem("maxSeason"));
+			var minSeason = document.getElementById("min").value
+				if (minSeason > 0 && minSeason < 25) {
+					localStorage.setItem("minSeason", document.getElementById("min").value);
+				} else {
+					localStorage.setItem("minSeason", 1)
+				}
+				if (maxSeason > 0 && maxSeason < 25 && maxSeason > minSeason) {
+					localStorage.setItem("maxSeason", document.getElementById("max").value);
+				} else {
+					localStorage.setItem("maxSeason", 24)
+				}
 			}
 		</script>
 	</head>
