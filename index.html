@@ -3,13 +3,14 @@
 		<script>
 			function submit() {
 			var minSeason = document.getElementById("min").value
+			var maxSeason = document.getElementById("max").value
 				if (minSeason > 0 && minSeason < 25) {
-					localStorage.setItem("minSeason", document.getElementById("min").value);
+					localStorage.setItem("minSeason", minSeason);
 				} else {
 					localStorage.setItem("minSeason", 1)
 				}
 				if (maxSeason > 0 && maxSeason < 25 && maxSeason > minSeason) {
-					localStorage.setItem("maxSeason", document.getElementById("max").value);
+					localStorage.setItem("maxSeason", maxSeason);
 				} else {
 					localStorage.setItem("maxSeason", 24)
 				}
