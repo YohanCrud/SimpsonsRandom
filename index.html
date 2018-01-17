@@ -1,12 +1,18 @@
 <html>
 	<head>
+		<script>
+			function submit() {
+				alert("min: " + document.getElementById("min"))
+				alert("max: " + document.getElementById("max"))
+			}
+		</script>
+	</head>
 		<body>
 			<h1> Random Simpsons Epsiode </h1>
 				<form action="">
-					Season From: <input type="text" name="minSeason">
-					Season To: <input type="text" name="minSeason">
+					Season From: <input type="text" name="minSeason" id="min" >
+					Season To: <input type="text" name="minSeason" id="max">
 				</form>
-				<a href="simp.html" class="button">Go</a>
+				<input type="submit" name="btnSearch" value="Search" onclick="submit()"/>
 		</body>
-	</head>
 </html>
