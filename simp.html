@@ -25,7 +25,7 @@
        // Pick an episode to watch.
        var pickOne = function() {
          var obj = {}
-         obj.season = Math.randint(localStorage.getItem("minSeason"), localStorage.getItem("maxSeason");
+         obj.season = Math.randint(localStorage.getItem("minSeason"), localStorage.getItem("maxSeason"));
          obj.episode = Math.randint(1, NUM_EPISODES[obj.season-1]);
          return obj;
        }
