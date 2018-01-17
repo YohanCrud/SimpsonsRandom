@@ -9,7 +9,7 @@
 				} else {
 					localStorage.setItem("minSeason", 1);
 				}
-				if (maxSeason > 0 && maxSeason < 25 && maxSeason > minSeason) {
+				if (maxSeason > 0 && maxSeason < 25 && maxSeason >= minSeason) {
 					localStorage.setItem("maxSeason", maxSeason);
 				} else {
 					localStorage.setItem("maxSeason", 24);
