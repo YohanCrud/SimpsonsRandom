@@ -2,19 +2,19 @@
 	<head>
 		<script>
 			function submit() {
-			var minSeason = document.getElementById("min").value
-			var maxSeason = document.getElementById("max").value
+			var minSeason = document.getElementById("min").value;
+			var maxSeason = document.getElementById("max").value;
 				if (minSeason > 0 && minSeason < 25) {
 					localStorage.setItem("minSeason", minSeason);
 				} else {
-					localStorage.setItem("minSeason", 1)
+					localStorage.setItem("minSeason", 1);
 				}
 				if (maxSeason > 0 && maxSeason < 25 && maxSeason > minSeason) {
 					localStorage.setItem("maxSeason", maxSeason);
 				} else {
-					localStorage.setItem("maxSeason", 24)
+					localStorage.setItem("maxSeason", 24);
 				}
-			window.location.url = "https://yohancrud.github.io/SimpsonsRandom/simp.html"
+			window.location.href = "https://yohancrud.github.io/SimpsonsRandom/simp.html";
 			}
 		</script>
 	</head>
