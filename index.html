@@ -2,8 +2,9 @@
 	<head>
 		<script>
 			function submit() {
-				alert("min: " + document.getElementById("min").value)
-				alert("max: " + document.getElementById("max").value)
+				localStorage.setItem("minSeason", document.getElementById("min").value);
+				localStorage.setItem("maxSeason", document.getElementById("max").value);
+				alert(localStorage.getItem("maxSeason");
 			}
 		</script>
 	</head>
